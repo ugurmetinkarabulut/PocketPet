@@ -8,6 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		AD23A061305FEBAB001310FB /* PocketPet Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AD23A060305FEBAB001310FB /* PocketPet Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CC0000010000000000000001 /* PocketPet Complication.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CC0000200000000000000001 /* PocketPet Complication.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CC0000020000000000000001 /* PetState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000210000000000000001 /* PetState.swift */; };
+		CC0000030000000000000001 /* PetVisualState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000220000000000000001 /* PetVisualState.swift */; };
+		CC0000040000000000000001 /* SharedPetPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000230000000000000001 /* SharedPetPersistence.swift */; };
+		CC0000050000000000000001 /* PocketPetComplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000240000000000000001 /* PocketPetComplication.swift */; };
+		CC0000060000000000000001 /* PetAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC0000280000000000000001 /* PetAssets.xcassets */; };
+		CC0000070000000000000001 /* PetAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC0000280000000000000001 /* PetAssets.xcassets */; };
+		CC0000080000000000000001 /* PetSpecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000270000000000000001 /* PetSpecies.swift */; };
+		D10000010000000000000001 /* PocketPet Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D10000200000000000000001 /* PocketPet Widget.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D10000020000000000000001 /* PocketPetWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000210000000000000001 /* PocketPetWidget.swift */; };
+		D10000030000000000000001 /* WidgetPetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000240000000000000001 /* WidgetPetSnapshot.swift */; };
+		D10000040000000000000001 /* WidgetPetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000240000000000000001 /* WidgetPetSnapshot.swift */; };
+		D10000050000000000000001 /* PetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000003 /* PetSnapshot.swift */; };
+		E10000000000000000000001 /* PetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000003 /* PetSnapshot.swift */; };
+		E10000000000000000000002 /* PetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000003 /* PetSnapshot.swift */; };
+		E20000000000000000000001 /* PetCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000005 /* PetCommand.swift */; };
+		E20000000000000000000002 /* PetCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000005 /* PetCommand.swift */; };
+		E20000000000000000000003 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000006 /* Food.swift */; };
+		E20000000000000000000004 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000006 /* Food.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +65,20 @@
 			remoteGlobalIDString = AD23A05F305FEBAB001310FB;
 			remoteInfo = "PocketPet Watch App";
 		};
+		CC0000100000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD23A035305FEBAA001310FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC0000400000000000000001;
+			remoteInfo = "PocketPet Complication";
+		};
+		D10000100000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD23A035305FEBAA001310FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D10000400000000000000001;
+			remoteInfo = "PocketPet Widget";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +93,28 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC0000110000000000000001 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CC0000010000000000000001 /* PocketPet Complication.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10000110000000000000001 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D10000010000000000000001 /* PocketPet Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +124,23 @@
 		AD23A060305FEBAB001310FB /* PocketPet Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PocketPet Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD23A06F305FEBAC001310FB /* PocketPet Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PocketPet Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD23A079305FEBAC001310FB /* PocketPet Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PocketPet Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC0000200000000000000001 /* PocketPet Complication.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PocketPet Complication.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC0000210000000000000001 /* PetState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PetState.swift; path = "PocketPet Watch App/PetState.swift"; sourceTree = SOURCE_ROOT; };
+		CC0000220000000000000001 /* PetVisualState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PetVisualState.swift; path = "PocketPet Watch App/PetVisualState.swift"; sourceTree = SOURCE_ROOT; };
+		CC0000230000000000000001 /* SharedPetPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SharedPetPersistence.swift; path = "PocketPet Watch App/SharedPetPersistence.swift"; sourceTree = SOURCE_ROOT; };
+		CC0000240000000000000001 /* PocketPetComplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketPetComplication.swift; sourceTree = "<group>"; };
+		CC0000250000000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC0000260000000000000001 /* PocketPet Complication.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "PocketPet Complication.entitlements"; sourceTree = "<group>"; };
+		CC0000270000000000000001 /* PetSpecies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PetSpecies.swift; path = "PocketPet Watch App/PetSpecies.swift"; sourceTree = SOURCE_ROOT; };
+		CC0000280000000000000001 /* PetAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PetAssets.xcassets; sourceTree = "<group>"; };
+		D10000200000000000000001 /* PocketPet Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PocketPet Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10000210000000000000001 /* PocketPetWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketPetWidget.swift; sourceTree = "<group>"; };
+		D10000220000000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D10000230000000000000001 /* PocketPet Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "PocketPet Widget.entitlements"; sourceTree = "<group>"; };
+		D10000240000000000000001 /* WidgetPetSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetPetSnapshot.swift; sourceTree = "<group>"; };
+		E10000000000000000000003 /* PetSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSnapshot.swift; sourceTree = "<group>"; };
+		E20000000000000000000005 /* PetCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCommand.swift; sourceTree = "<group>"; };
+		E20000000000000000000006 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -147,6 +219,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC0000310000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10000310000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -159,7 +245,11 @@
 				AD23A064305FEBAB001310FB /* PocketPet Watch App */,
 				AD23A072305FEBAC001310FB /* PocketPet Watch AppTests */,
 				AD23A07C305FEBAC001310FB /* PocketPet Watch AppUITests */,
+				CC0000300000000000000001 /* PocketPet Complication */,
+				D10000300000000000000001 /* PocketPet Widget */,
+				CC0000320000000000000001 /* PocketPet Shared */,
 				AD23A03E305FEBAA001310FB /* Products */,
+				AD23A13C30600644001310FB /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,8 +262,53 @@
 				AD23A060305FEBAB001310FB /* PocketPet Watch App.app */,
 				AD23A06F305FEBAC001310FB /* PocketPet Watch AppTests.xctest */,
 				AD23A079305FEBAC001310FB /* PocketPet Watch AppUITests.xctest */,
+				CC0000200000000000000001 /* PocketPet Complication.appex */,
+				D10000200000000000000001 /* PocketPet Widget.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AD23A13C30600644001310FB /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				CC0000270000000000000001 /* PetSpecies.swift */,
+				CC0000210000000000000001 /* PetState.swift */,
+				CC0000220000000000000001 /* PetVisualState.swift */,
+				CC0000230000000000000001 /* SharedPetPersistence.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		CC0000300000000000000001 /* PocketPet Complication */ = {
+			isa = PBXGroup;
+			children = (
+				CC0000240000000000000001 /* PocketPetComplication.swift */,
+				CC0000250000000000000001 /* Info.plist */,
+				CC0000260000000000000001 /* PocketPet Complication.entitlements */,
+			);
+			path = "PocketPet Complication";
+			sourceTree = "<group>";
+		};
+		CC0000320000000000000001 /* PocketPet Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E10000000000000000000003 /* PetSnapshot.swift */,
+				D10000240000000000000001 /* WidgetPetSnapshot.swift */,
+				E20000000000000000000005 /* PetCommand.swift */,
+				E20000000000000000000006 /* Food.swift */,
+				CC0000280000000000000001 /* PetAssets.xcassets */,
+			);
+			path = "PocketPet Shared";
+			sourceTree = "<group>";
+		};
+		D10000300000000000000001 /* PocketPet Widget */ = {
+			isa = PBXGroup;
+			children = (
+				D10000210000000000000001 /* PocketPetWidget.swift */,
+				D10000220000000000000001 /* Info.plist */,
+				D10000230000000000000001 /* PocketPet Widget.entitlements */,
+			);
+			path = "PocketPet Widget";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,11 +322,13 @@
 				AD23A03A305FEBAA001310FB /* Frameworks */,
 				AD23A03B305FEBAA001310FB /* Resources */,
 				AD23A086305FEBAC001310FB /* Embed Watch Content */,
+				D10000110000000000000001 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				AD23A063305FEBAB001310FB /* PBXTargetDependency */,
+				D10000430000000000000001 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				AD23A03F305FEBAA001310FB /* PocketPet */,
@@ -256,10 +393,12 @@
 				AD23A05C305FEBAB001310FB /* Sources */,
 				AD23A05D305FEBAB001310FB /* Frameworks */,
 				AD23A05E305FEBAB001310FB /* Resources */,
+				CC0000110000000000000001 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CC0000430000000000000001 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				AD23A064305FEBAB001310FB /* PocketPet Watch App */,
@@ -317,6 +456,44 @@
 			productReference = AD23A079305FEBAC001310FB /* PocketPet Watch AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		CC0000400000000000000001 /* PocketPet Complication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC0000520000000000000001 /* Build configuration list for PBXNativeTarget "PocketPet Complication" */;
+			buildPhases = (
+				CC0000420000000000000001 /* Sources */,
+				CC0000310000000000000001 /* Frameworks */,
+				CC0000410000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PocketPet Complication";
+			packageProductDependencies = (
+			);
+			productName = "PocketPet Complication";
+			productReference = CC0000200000000000000001 /* PocketPet Complication.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D10000400000000000000001 /* PocketPet Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D10000520000000000000001 /* Build configuration list for PBXNativeTarget "PocketPet Widget" */;
+			buildPhases = (
+				D10000420000000000000001 /* Sources */,
+				D10000310000000000000001 /* Frameworks */,
+				D10000410000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PocketPet Widget";
+			packageProductDependencies = (
+			);
+			productName = "PocketPet Widget";
+			productReference = D10000200000000000000001 /* PocketPet Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -329,6 +506,11 @@
 				TargetAttributes = {
 					AD23A03C305FEBAA001310FB = {
 						CreatedOnToolsVersion = 26.2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups = {
+								enabled = 1;
+							};
+						};
 					};
 					AD23A049305FEBAB001310FB = {
 						CreatedOnToolsVersion = 26.2;
@@ -340,6 +522,14 @@
 					};
 					AD23A05F305FEBAB001310FB = {
 						CreatedOnToolsVersion = 26.2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					AD23A06E305FEBAC001310FB = {
 						CreatedOnToolsVersion = 26.2;
@@ -348,6 +538,22 @@
 					AD23A078305FEBAC001310FB = {
 						CreatedOnToolsVersion = 26.2;
 						TestTargetID = AD23A05F305FEBAB001310FB;
+					};
+					CC0000400000000000000001 = {
+						CreatedOnToolsVersion = 26.2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups = {
+								enabled = 1;
+							};
+						};
+					};
+					D10000400000000000000001 = {
+						CreatedOnToolsVersion = 26.2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -371,6 +577,8 @@
 				AD23A05F305FEBAB001310FB /* PocketPet Watch App */,
 				AD23A06E305FEBAC001310FB /* PocketPet Watch AppTests */,
 				AD23A078305FEBAC001310FB /* PocketPet Watch AppUITests */,
+				CC0000400000000000000001 /* PocketPet Complication */,
+				D10000400000000000000001 /* PocketPet Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -401,6 +609,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC0000060000000000000001 /* PetAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +627,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC0000410000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC0000070000000000000001 /* PetAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10000410000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -425,6 +649,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10000000000000000000001 /* PetSnapshot.swift in Sources */,
+				D10000030000000000000001 /* WidgetPetSnapshot.swift in Sources */,
+				E20000000000000000000001 /* PetCommand.swift in Sources */,
+				E20000000000000000000003 /* Food.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +674,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10000000000000000000002 /* PetSnapshot.swift in Sources */,
+				E20000000000000000000002 /* PetCommand.swift in Sources */,
+				E20000000000000000000004 /* Food.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +691,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC0000420000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC0000050000000000000001 /* PocketPetComplication.swift in Sources */,
+				CC0000080000000000000001 /* PetSpecies.swift in Sources */,
+				CC0000020000000000000001 /* PetState.swift in Sources */,
+				CC0000030000000000000001 /* PetVisualState.swift in Sources */,
+				CC0000040000000000000001 /* SharedPetPersistence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10000420000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10000020000000000000001 /* PocketPetWidget.swift in Sources */,
+				D10000040000000000000001 /* WidgetPetSnapshot.swift in Sources */,
+				D10000050000000000000001 /* PetSnapshot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +743,16 @@
 			isa = PBXTargetDependency;
 			target = AD23A05F305FEBAB001310FB /* PocketPet Watch App */;
 			targetProxy = AD23A07A305FEBAC001310FB /* PBXContainerItemProxy */;
+		};
+		CC0000430000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC0000400000000000000001 /* PocketPet Complication */;
+			targetProxy = CC0000100000000000000001 /* PBXContainerItemProxy */;
+		};
+		D10000430000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D10000400000000000000001 /* PocketPet Widget */;
+			targetProxy = D10000100000000000000001 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -613,11 +876,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "PocketPet Watch App/PocketPet Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = PocketPet;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "PocketPet reads your daily step count to award pet XP.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = ugurmetinkarabulut.PocketPet;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -630,6 +895,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -645,11 +911,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "PocketPet Watch App/PocketPet Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = PocketPet;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "PocketPet reads your daily step count to award pet XP.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = ugurmetinkarabulut.PocketPet;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -662,6 +930,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -678,6 +947,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PocketPet/PocketPet.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
@@ -703,7 +973,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -712,6 +982,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PocketPet/PocketPet.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
@@ -737,7 +1008,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -918,6 +1189,124 @@
 			};
 			name = Release;
 		};
+		CC0000500000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = "PocketPet Complication/PocketPet Complication.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "PocketPet Complication/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ugurmetinkarabulut.PocketPet.watchkitapp.complication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Debug;
+		};
+		CC0000510000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = "PocketPet Complication/PocketPet Complication.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "PocketPet Complication/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ugurmetinkarabulut.PocketPet.watchkitapp.complication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Release;
+		};
+		D10000500000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = "PocketPet Widget/PocketPet Widget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "PocketPet Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ugurmetinkarabulut.PocketPet.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D10000510000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = "PocketPet Widget/PocketPet Widget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "PocketPet Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ugurmetinkarabulut.PocketPet.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -980,6 +1369,24 @@
 			buildConfigurations = (
 				AD23A094305FEBAC001310FB /* Debug */,
 				AD23A095305FEBAC001310FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC0000520000000000000001 /* Build configuration list for PBXNativeTarget "PocketPet Complication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC0000500000000000000001 /* Debug */,
+				CC0000510000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D10000520000000000000001 /* Build configuration list for PBXNativeTarget "PocketPet Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10000500000000000000001 /* Debug */,
+				D10000510000000000000001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
